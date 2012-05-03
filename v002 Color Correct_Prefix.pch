@@ -1,0 +1,8 @@
+#define v002_FBO_CLASS_NAME_REPLACE_ME v002ColorControlsFBO
+#define v002_SHADER_CLASS_NAME_REPLACE_ME v002ColorControlsShader
+#define v002_PLUGIN_CLASS_NAME_REPLACE_ME v002ColorControlsMasterPluginInterface
+
+
+#ifdef __OBJC__
+	#import <Quartz/Quartz.h>
+#endif
