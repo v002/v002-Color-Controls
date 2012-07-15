@@ -14,8 +14,6 @@
 #define	kQCPlugIn_Name				@"v002 Levels"
 #define	kQCPlugIn_Description		@"Photoshop style level control."
 
-
-
 static void _TextureReleaseCallback(CGLContextObj cgl_ctx, GLuint name, void* info)
 {
 	glDeleteTextures(1, &name);
@@ -34,7 +32,9 @@ static void _TextureReleaseCallback(CGLContextObj cgl_ctx, GLuint name, void* in
 
 + (NSDictionary*) attributes
 {	
-	return [NSDictionary dictionaryWithObjectsAndKeys:kQCPlugIn_Name, QCPlugInAttributeNameKey, [kQCPlugIn_Description stringByAppendingString:kv002DescriptionAddOnText], QCPlugInAttributeDescriptionKey, nil];
+	return [NSDictionary dictionaryWithObjectsAndKeys:kQCPlugIn_Name, QCPlugInAttributeNameKey,
+            [kQCPlugIn_Description stringByAppendingString:kv002DescriptionAddOnText], QCPlugInAttributeDescriptionKey,
+            kQCPlugIn_Category, QCPlugInAttributeCategoriesKey, nil];
 }
 
 + (NSDictionary*) attributesForPropertyPortWithKey:(NSString*)key

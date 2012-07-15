@@ -1,3 +1,6 @@
+#define	kQCPlugIn_Category [NSArray arrayWithObjects:@"v002", @"v002 Color Controls", nil]
+
+
 #define v002_FBO_CLASS_NAME_REPLACE_ME v002ColorControlsFBO
 #define v002_SHADER_CLASS_NAME_REPLACE_ME v002ColorControlsShader
 #define v002_PLUGIN_CLASS_NAME_REPLACE_ME v002ColorControlsMasterPluginInterface
